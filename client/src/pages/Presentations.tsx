@@ -9,23 +9,26 @@ export default function Presentations() {
       title: 'Sustainable Infrastructure Design',
       conference: 'National Engineering Conference 2024',
       tooltip: 'Presented innovative approaches to sustainable infrastructure design and their implementation in modern projects',
+      bgColor: 'from-blue-500 to-cyan-500',
     },
     {
       id: 2,
       title: 'Digital Tools in Civil Engineering',
       conference: 'Engineering Technology Summit',
       tooltip: 'Discussed the role of digital tools and BIM in modern civil engineering projects',
+      bgColor: 'from-indigo-500 to-purple-500',
     },
     {
       id: 3,
       title: 'Community-Focused Engineering',
       conference: 'Regional Engineering Forum',
       tooltip: 'Shared experiences from volunteer work and community infrastructure initiatives',
+      bgColor: 'from-pink-500 to-orange-500',
     },
   ];
 
   return (
-    <section id="presentations" className="section-padding bg-background">
+    <section id="presentations" className="section-padding bg-gradient-to-b from-slate-100 to-white">
       <div className="container">
         <h2 className="section-title">Presentations</h2>
 
@@ -34,13 +37,15 @@ export default function Presentations() {
             {presentations.map((presentation) => (
               <Tooltip key={presentation.id}>
                 <TooltipTrigger asChild>
-                  <Card className="p-6 bg-card border border-border hover:border-primary/50 cursor-pointer transition-all group">
-                    <div className="flex items-start justify-between mb-4">
-                      <FileText size={24} className="text-primary flex-shrink-0 group-hover:scale-110 transition-transform" />
-                      <Info size={18} className="text-muted-foreground flex-shrink-0" />
+                  <Card className="overflow-hidden cursor-pointer transition-all hover:shadow-xl hover:scale-105 border-0">
+                    <div className={`p-8 bg-gradient-to-br ${presentation.bgColor} text-white`}>
+                      <FileText size={32} className="mb-4 drop-shadow-lg" />
+                      <h3 className="text-lg font-semibold mb-2">{presentation.title}</h3>
+                      <p className="text-sm opacity-90">{presentation.conference}</p>
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">{presentation.title}</h3>
-                    <p className="text-sm text-muted-foreground">{presentation.conference}</p>
+                    <div className="p-4 bg-white">
+                      <Info size={18} className="text-slate-400" />
+                    </div>
                   </Card>
                 </TooltipTrigger>
                 <TooltipContent side="top" className="max-w-xs">

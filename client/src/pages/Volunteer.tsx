@@ -9,23 +9,26 @@ export default function Volunteer() {
       title: 'Engineering Student Society - President',
       period: '2023-2024',
       tooltip: 'Led student organization. Organized workshops, coordinated industry events, mentored members, managed operations.',
+      bgColor: 'from-blue-500 to-cyan-500',
     },
     {
       id: 2,
       title: 'Community Infrastructure Initiative',
       period: '2023-Present',
       tooltip: 'Active volunteer in community projects. Conducted surveys, provided design support, engaged stakeholders.',
+      bgColor: 'from-green-500 to-emerald-500',
     },
     {
       id: 3,
       title: 'Engineering Mentorship Program',
       period: '2023-2024',
       tooltip: 'Mentored junior students. Provided academic guidance, shared industry insights, facilitated networking.',
+      bgColor: 'from-purple-500 to-pink-500',
     },
   ];
 
   return (
-    <section id="volunteer" className="section-padding bg-card/50">
+    <section id="volunteer" className="section-padding bg-gradient-to-b from-white via-green-50 to-slate-100">
       <div className="container">
         <h2 className="section-title">Volunteer Work</h2>
 
@@ -34,13 +37,15 @@ export default function Volunteer() {
             {activities.map((activity) => (
               <Tooltip key={activity.id}>
                 <TooltipTrigger asChild>
-                  <Card className="p-6 bg-card border border-border hover:border-primary/50 cursor-pointer transition-all group">
-                    <div className="flex items-start justify-between mb-4">
-                      <Heart size={24} className="text-primary flex-shrink-0 group-hover:scale-110 transition-transform" />
-                      <Info size={18} className="text-muted-foreground flex-shrink-0" />
+                  <Card className="overflow-hidden cursor-pointer transition-all hover:shadow-xl hover:scale-105 border-0">
+                    <div className={`p-8 bg-gradient-to-br ${activity.bgColor} text-white`}>
+                      <Heart size={32} className="mb-4 drop-shadow-lg fill-white" />
+                      <h3 className="text-lg font-semibold mb-2">{activity.title}</h3>
+                      <p className="text-sm opacity-90">{activity.period}</p>
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">{activity.title}</h3>
-                    <p className="text-sm text-muted-foreground">{activity.period}</p>
+                    <div className="p-4 bg-white">
+                      <Info size={18} className="text-slate-400" />
+                    </div>
                   </Card>
                 </TooltipTrigger>
                 <TooltipContent side="top" className="max-w-xs">

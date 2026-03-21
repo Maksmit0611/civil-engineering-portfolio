@@ -9,23 +9,26 @@ export default function Achievements() {
       title: 'Student-as-Staff Award',
       date: '2024',
       tooltip: 'Recognized for outstanding contribution and leadership as a student staff member',
+      bgColor: 'from-yellow-500 to-orange-500',
     },
     {
       id: 2,
       title: 'Volunteer Excellence',
       date: '2023-2024',
       tooltip: 'Acknowledged for dedicated volunteer work in community infrastructure projects',
+      bgColor: 'from-green-500 to-cyan-500',
     },
     {
       id: 3,
       title: 'Engineering Leadership',
       date: '2024',
       tooltip: 'Honored for demonstrating exceptional leadership in team projects',
+      bgColor: 'from-purple-500 to-pink-500',
     },
   ];
 
   return (
-    <section id="achievements" className="section-padding bg-card/50">
+    <section id="achievements" className="section-padding bg-gradient-to-b from-white via-purple-50 to-slate-100">
       <div className="container">
         <h2 className="section-title">Achievements</h2>
 
@@ -34,13 +37,15 @@ export default function Achievements() {
             {achievements.map((achievement) => (
               <Tooltip key={achievement.id}>
                 <TooltipTrigger asChild>
-                  <Card className="p-6 bg-card border border-border hover:border-primary/50 cursor-pointer transition-all group">
-                    <div className="flex items-start gap-3 mb-4">
-                      <Trophy size={24} className="text-primary flex-shrink-0 group-hover:scale-110 transition-transform" />
-                      <Info size={18} className="text-muted-foreground flex-shrink-0" />
+                  <Card className="overflow-hidden cursor-pointer transition-all hover:shadow-xl hover:scale-105 border-0">
+                    <div className={`p-8 bg-gradient-to-br ${achievement.bgColor} text-white`}>
+                      <Trophy size={32} className="mb-4 drop-shadow-lg" />
+                      <h3 className="text-lg font-semibold mb-2">{achievement.title}</h3>
+                      <p className="text-sm opacity-90">{achievement.date}</p>
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">{achievement.title}</h3>
-                    <p className="text-sm text-muted-foreground">{achievement.date}</p>
+                    <div className="p-4 bg-white">
+                      <Info size={18} className="text-slate-400" />
+                    </div>
                   </Card>
                 </TooltipTrigger>
                 <TooltipContent side="top" className="max-w-xs">

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,13 +16,13 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-lg">CE</span>
           </div>
-          <span className="hidden sm:inline text-lg font-bold text-foreground">Portfolio</span>
+          <span className="hidden sm:inline text-lg font-semibold text-foreground">Portfolio</span>
         </div>
 
         {/* Desktop Navigation */}
@@ -32,7 +31,7 @@ export default function Navigation() {
             <a
               key={link.href}
               href={link.href}
-              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-accent transition-colors"
+              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -56,7 +55,7 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-accent hover:bg-accent/10 rounded-lg transition-colors"
+                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-lg transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}

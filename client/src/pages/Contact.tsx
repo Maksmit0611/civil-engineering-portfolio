@@ -7,15 +7,15 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com',
+      value: 'smit.makwana@example.com',
+      href: 'mailto:smit.makwana@example.com',
       bgColor: 'from-red-500 to-pink-500',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/yourprofile',
-      href: 'https://linkedin.com/in/yourprofile',
+      value: 'linkedin.com/in/smit-makwana9',
+      href: 'https://linkedin.com/in/smit-makwana9',
       bgColor: 'from-blue-600 to-blue-400',
     },
     {
@@ -28,8 +28,8 @@ export default function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      value: 'github.com/yourprofile',
-      href: 'https://github.com/yourprofile',
+      value: 'github.com/smitmakwana',
+      href: 'https://github.com/smitmakwana',
       bgColor: 'from-slate-700 to-slate-900',
     },
   ];
@@ -62,14 +62,14 @@ export default function Contact() {
           <Card className="p-8 bg-gradient-to-r from-blue-600 to-cyan-500 text-white border-0">
             <h3 className="text-2xl font-semibold mb-4">Let's Connect</h3>
             <p className="mb-6 opacity-90">
-              Interested in discussing projects or opportunities? Reach out anytime.
+              Interested in discussing projects, career opportunities, or collaboration? I'd love to hear from you. Feel free to reach out through any of the channels above or send me a direct message on LinkedIn.
             </p>
             <Button
               size="lg"
               className="bg-white hover:bg-blue-50 text-blue-600 font-semibold"
-              onClick={() => window.location.href = 'mailto:your.email@example.com'}
+              onClick={() => window.location.href = 'https://linkedin.com/in/smit-makwana9'}
             >
-              Send Email
+              Connect on LinkedIn
             </Button>
           </Card>
         </div>

@@ -6,24 +6,31 @@ export default function Presentations() {
   const presentations = [
     {
       id: 1,
-      title: 'Sustainable Infrastructure Design',
-      conference: 'National Engineering Conference 2024',
-      tooltip: 'Presented innovative approaches to sustainable infrastructure design and their implementation in modern projects',
+      title: 'Advanced Transportation Engineering',
+      conference: 'Victoria University',
+      tooltip: 'Presented on EDCM (Engineering Design and Construction Manual) and its application in Melbourne\'s urban growth areas. Covered council adoption and implementation strategies.',
       bgColor: 'from-blue-500 to-cyan-500',
     },
     {
       id: 2,
-      title: 'Digital Tools in Civil Engineering',
-      conference: 'Engineering Technology Summit',
-      tooltip: 'Discussed the role of digital tools and BIM in modern civil engineering projects',
+      title: 'Sustainable Design and Development',
+      conference: 'Victoria University',
+      tooltip: 'Discussed alternative bio-materials including Mycelium, Hempcrete, and recycled wood as sustainable replacements for traditional construction materials. Focus on CO2 reduction and environmental impact.',
       bgColor: 'from-indigo-500 to-purple-500',
     },
     {
       id: 3,
-      title: 'Community-Focused Engineering',
-      conference: 'Regional Engineering Forum',
-      tooltip: 'Shared experiences from volunteer work and community infrastructure initiatives',
+      title: 'Leadership and Team Dynamics',
+      conference: 'Victoria University Staff Meetings',
+      tooltip: 'Shared insights on team dynamics as the most important factor in success. Discussed communication, student ownership, and continuous improvement in team environments.',
       bgColor: 'from-pink-500 to-orange-500',
+    },
+    {
+      id: 4,
+      title: 'Networking and Career Development',
+      conference: 'EA Elevation 2026',
+      tooltip: 'Presented on the importance of networking and direct company engagement for career advancement. Discussed connections with leading engineering firms and industry insights.',
+      bgColor: 'from-emerald-500 to-green-500',
     },
   ];
 
@@ -32,7 +39,7 @@ export default function Presentations() {
       <div className="container">
         <h2 className="section-title">Presentations</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           <TooltipProvider>
             {presentations.map((presentation) => (
               <Tooltip key={presentation.id}>

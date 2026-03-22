@@ -17,14 +17,27 @@ export default function Hero() {
 
       <div className="container relative z-10">
         <div className="max-w-2xl">
+          {/* Profile Picture */}
+          <div className="mb-8">
+            <img 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663461160876/iDjPnzdgxwxftb2XBwSWdK/smit-profile_d63412c4.webp"
+              alt="Smit Makwana"
+              className="w-24 h-24 rounded-full border-4 border-white shadow-lg object-cover"
+            />
+          </div>
+
           {/* Main Heading */}
           <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight text-white">
-            Civil Engineer
+            Smit Makwana
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-blue-100 mb-12 font-light">
-            Master's Graduate • Infrastructure Design • Project Leadership
+          <p className="text-xl md:text-2xl text-blue-100 mb-4 font-light">
+            Graduate Civil Engineer (Honours)
+          </p>
+          
+          <p className="text-lg md:text-xl text-blue-200 mb-12 font-light">
+            Infrastructure Design • Project Leadership • Team Dynamics
           </p>
 
           {/* CTA Buttons */}

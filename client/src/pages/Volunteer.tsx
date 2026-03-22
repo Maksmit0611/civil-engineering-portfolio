@@ -6,33 +6,43 @@ export default function Volunteer() {
   const activities = [
     {
       id: 1,
-      title: 'Engineering Student Society - President',
-      period: '2023-2024',
-      tooltip: 'Led student organization. Organized workshops, coordinated industry events, mentored members, managed operations.',
+      title: 'VUPA President',
+      period: '2024 - Present',
+      tooltip: 'Leading Victoria University Postgraduate Association. Organizing major events, managing team, coordinating with university and external stakeholders, fostering community engagement.',
       bgColor: 'from-blue-500 to-cyan-500',
     },
     {
       id: 2,
-      title: 'Community Infrastructure Initiative',
-      period: '2023-Present',
-      tooltip: 'Active volunteer in community projects. Conducted surveys, provided design support, engaged stakeholders.',
+      title: 'Student Mentor',
+      company: 'Victoria University',
+      period: '2023 - 2024',
+      tooltip: 'Mentored junior students providing academic guidance, career advice, and professional development support. Facilitated networking and industry connections.',
       bgColor: 'from-green-500 to-emerald-500',
     },
     {
       id: 3,
-      title: 'Engineering Mentorship Program',
-      period: '2023-2024',
-      tooltip: 'Mentored junior students. Provided academic guidance, shared industry insights, facilitated networking.',
+      title: 'Careers Hub Member',
+      company: 'Victoria University',
+      period: '2023 - 2024',
+      tooltip: 'Worked under Trish Gray\'s leadership supporting student career development. Organized career events, facilitated employer connections, and provided career guidance.',
       bgColor: 'from-purple-500 to-pink-500',
+    },
+    {
+      id: 4,
+      title: 'Event Organization & Community Engagement',
+      company: 'Victoria University',
+      period: '2024 - Present',
+      tooltip: 'Organized major cultural and professional events including Holi Celebration 2026 (106 tickets, 70 attendees), International Women\'s Day events, and networking sessions.',
+      bgColor: 'from-orange-500 to-red-500',
     },
   ];
 
   return (
     <section id="volunteer" className="section-padding bg-gradient-to-b from-white via-green-50 to-slate-100">
       <div className="container">
-        <h2 className="section-title">Volunteer Work</h2>
+        <h2 className="section-title">Volunteer Work & Leadership</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           <TooltipProvider>
             {activities.map((activity) => (
               <Tooltip key={activity.id}>

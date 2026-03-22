@@ -13,11 +13,13 @@ export default function Skills() {
 
   const softSkills = [
     'Leadership',
-    'Team Collaboration',
+    'Team Dynamics',
     'Problem Solving',
     'Communication',
     'Project Management',
-    'Critical Thinking',
+    'Event Organization',
+    'Stakeholder Management',
+    'Mentoring',
   ];
 
   return (
@@ -70,6 +72,8 @@ export default function Skills() {
                       'from-green-500 to-cyan-500',
                       'from-indigo-500 to-blue-500',
                       'from-pink-500 to-purple-500',
+                      'from-cyan-500 to-blue-500',
+                      'from-emerald-500 to-green-500',
                     ];
                     const bgColor = colors[index % colors.length];
 

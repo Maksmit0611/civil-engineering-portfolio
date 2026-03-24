@@ -6,7 +6,7 @@ export default function Experience() {
   const experiences = [
     {
       id: 1,
-      title: 'Graduate Civil Engineer',
+      title: 'Student Ambassador',
       company: 'Engineers Australia',
       period: '2024 - Present',
       tooltip: 'Contributing to infrastructure and design projects. Responsibilities: Project design, technical documentation, site inspections, CAD modeling, team collaboration.',
@@ -14,7 +14,7 @@ export default function Experience() {
     },
     {
       id: 2,
-      title: 'Student Mentor & Careers Hub',
+      title: 'Peer Careers Advisor',
       company: 'Victoria University',
       period: '2023 - 2024',
       tooltip: 'Supported student development and career guidance. Responsibilities: Mentoring junior students, organizing career events, providing academic guidance, facilitating networking opportunities.',
@@ -22,7 +22,7 @@ export default function Experience() {
     },
     {
       id: 3,
-      title: 'VUPA President',
+      title: 'General Secretary',
       company: 'Victoria University Postgraduate Association',
       period: '2024 - Present',
       tooltip: 'Leading postgraduate association. Responsibilities: Event organization, team leadership, stakeholder management, community engagement, strategic planning.',

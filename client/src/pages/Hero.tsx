@@ -33,11 +33,11 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-blue-100 mb-4 font-light">
-            Graduate Civil Engineer (Honours)
+            Master of Civil Engineering
           </p>
           
           <p className="text-lg md:text-xl text-blue-200 mb-12 font-light">
-            Infrastructure Design • Project Leadership • Team Dynamics
+            EA Student Ambassador • Project Leadership • Team Dynamics
           </p>
 
           {/* CTA Buttons */}

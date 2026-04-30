@@ -1,6 +1,4 @@
-import { Card } from '@/components/ui/card';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { Info } from 'lucide-react';
+import Project3DCard from '@/components/Project3DCard';
 
 export default function Projects() {
   const projects = [
@@ -36,43 +34,18 @@ export default function Projects() {
         <h2 className="section-title">Projects</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <TooltipProvider>
-            {projects.map((project) => (
-              <Tooltip key={project.id}>
-                <TooltipTrigger asChild>
-                  <Card className="overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:scale-105 border-0">
-                    {/* Image Background */}
-                    <div 
-                      className={`h-40 bg-gradient-to-br ${project.bgGradient} relative overflow-hidden`}
-                      style={{
-                        backgroundImage: `url(${project.image})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                      }}
-                    >
-                      <div className="absolute inset-0 bg-black/30"></div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-6 bg-white">
-                      <div className="flex items-start justify-between mb-4">
-                        <h3 className="text-lg font-semibold text-slate-900">
-                          {project.title}
-                        </h3>
-                        <Info size={18} className="text-slate-400 flex-shrink-0" />
-                      </div>
-                      <p className="text-sm text-blue-600 font-medium">{project.role}</p>
-                    </div>
-                  </Card>
-                </TooltipTrigger>
-                <TooltipContent side="top" className="max-w-xs">
-                  <p className="text-sm">{project.tooltip}</p>
-                </TooltipContent>
-              </Tooltip>
-            ))}
-          </TooltipProvider>
+          {projects.map((project) => (
+            <Project3DCard key={project.id} {...project} />
+          ))}
         </div>
       </div>
+
+      <style>{`
+        @keyframes shimmer {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
+        }
+      `}</style>
     </section>
   );
 }

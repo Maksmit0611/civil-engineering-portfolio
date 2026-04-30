@@ -1,20 +1,22 @@
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Canvas3D from '@/components/Canvas3D';
+import RotatingCube from '@/components/RotatingCube';
 
 export default function Hero() {
   return (
     <section 
       id="hero" 
-      className="section-padding min-h-screen flex items-center justify-center relative overflow-hidden"
-      style={{
-        backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663461160876/iDjPnzdgxwxftb2XBwSWdK/engineer-1_196880f2.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
+      className="section-padding min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900"
     >
-      {/* Overlay gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-blue-800/75 to-transparent"></div>
+      {/* 3D Canvas Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <Canvas3D cameraPosition={[0, 0, 4]} enableControls={false} background="transparent">
+          <RotatingCube />
+        </Canvas3D>
+      </div>
 
+      {/* Content Overlay */}
       <div className="container relative z-10">
         <div className="max-w-2xl">
           {/* Profile Picture */}
@@ -22,21 +24,21 @@ export default function Hero() {
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663461160876/iDjPnzdgxwxftb2XBwSWdK/smit-profile_d63412c4.webp"
               alt="Smit Makwana"
-              className="w-24 h-24 rounded-full border-4 border-white shadow-lg object-cover"
+              className="w-24 h-24 rounded-full border-4 border-cyan-400 shadow-lg object-cover ring-4 ring-cyan-400/30"
             />
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight text-white">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
             Smit Makwana
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-blue-100 mb-4 font-light">
+          <p className="text-xl md:text-2xl text-cyan-300 mb-4 font-light drop-shadow-md">
             Master of Civil Engineering
           </p>
           
-          <p className="text-lg md:text-xl text-blue-200 mb-12 font-light">
+          <p className="text-lg md:text-xl text-blue-200 mb-12 font-light drop-shadow-md">
             EA Student Ambassador • Project Leadership • Team Dynamics
           </p>
 
@@ -44,7 +46,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center gap-4 mb-16">
             <Button
               size="lg"
-              className="bg-white hover:bg-blue-50 text-blue-900 px-8 font-semibold"
+              className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 px-8 font-semibold shadow-lg"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Work
@@ -52,7 +54,7 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="px-8 border-white text-white hover:bg-white/10"
+              className="px-8 border-cyan-400 text-cyan-300 hover:bg-cyan-400/10"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contact
@@ -61,7 +63,7 @@ export default function Hero() {
 
           {/* Scroll Indicator */}
           <div className="flex animate-bounce">
-            <ArrowDown size={24} className="text-white" />
+            <ArrowDown size={24} className="text-cyan-400" />
           </div>
         </div>
       </div>

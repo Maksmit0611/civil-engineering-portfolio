@@ -1,0 +1,48 @@
+{
+  "generated_utc": "2026-10-12T02:24:55.020754+00:00",
+  "warning": "Structural validation does not equal factor-by-factor semantic validation.",
+  "results": [
+    {
+      "source_id": "NECD_2026_V2",
+      "name": "National Embodied Carbon Databook September 2026 v2.0",
+      "timestamp_utc": "2026-10-12T02:24:39.991066+00:00",
+      "status": "FAILED_DOWNLOAD_OR_VALIDATION",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "source_id": "NGA_2026_XLSX",
+      "name": "National Greenhouse Accounts Factors 2026 workbook",
+      "timestamp_utc": "2026-10-12T02:24:40.001658+00:00",
+      "status": "FAILED_DOWNLOAD_OR_VALIDATION",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "source_id": "NGA_2026_PDF",
+      "name": "National Greenhouse Accounts Factors 2026 full methodology",
+      "timestamp_utc": "2026-10-12T02:24:45.007293+00:00",
+      "status": "FAILED_DOWNLOAD_OR_VALIDATION",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "source_id": "NABERS_MATERIAL_2026_3",
+      "name": "NABERS National Material Emission Factors Database v2026.3",
+      "timestamp_utc": "2026-10-12T02:24:45.008366+00:00",
+      "status": "FAILED_DOWNLOAD_OR_VALIDATION",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "source_id": "NABERS_TECH_2026_3",
+      "name": "NABERS Technical Workbook v2026.3",
+      "timestamp_utc": "2026-10-12T02:24:50.014004+00:00",
+      "status": "FAILED_DOWNLOAD_OR_VALIDATION",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "source_id": "DTP_CATALOGUE",
+      "name": "DTP Engineering Standards Catalogue current and archived",
+      "timestamp_utc": "2026-10-12T02:24:50.014935+00:00",
+      "status": "FAILED_DOWNLOAD_OR_VALIDATION",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    }
+  ]
+}

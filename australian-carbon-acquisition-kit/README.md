@@ -1,11 +1,19 @@
-# Australian Engineering Carbon Data Acquisition Kit
+# NISARVA — Engineering Carbon Intelligence
+
+**NISARVA** is the project and product name for this Australian engineering carbon emissions and lifecycle-assessment AI agent. The name is a modern coinage inspired by Sanskrit *Nisarga* (nature); it is not claimed to be a traditional Sanskrit word.
+
+**Tagline:** Engineering Intelligence, Inspired by Nature.
+
+**Project status:** Data acquisition and verification in progress. NISARVA is not yet a production-ready carbon factor database.
+
+## Australian Engineering Carbon Data Acquisition Kit
 
 **Research and acquisition checkpoint:** 12 October 2026.  
 **Primary jurisdiction:** Commonwealth of Australia and Victoria (roads and civil infrastructure).
 
 ## Important — do not mistake source identification for full data acquisition
 
-This kit is a working **data acquisition and validation pipeline**, standards/specification metadata registry, verified source bibliography, and a small **web-cross-checked example** from the 2026 NGA electricity table. It is **not** a complete ingested Australian factor database. The execution environment used to create this kit could access official government web pages via a research tool, but had **no functioning direct binary download network**: all six first-pass workbook/PDF fetches failed DNS resolution. See `reports/acquisition_run.json`. Source original XLSX/PDF files are therefore not bundled, and web-cross-checked factor rows are not approved for production.
+This NISARVA acquisition kit is a working **data acquisition and validation pipeline**, standards/specification metadata registry, verified source bibliography, and a small **web-cross-checked example** from the 2026 NGA electricity table. It is **not** a complete ingested Australian factor database. The execution environment used to create this kit could access official government web pages via a research tool, but had **no functioning direct binary download network**: all six first-pass workbook/PDF fetches failed DNS resolution. See `reports/acquisition_run.json`. Source original XLSX/PDF files are therefore not bundled, and web-cross-checked factor rows are not approved for production.
 
 The user should not need to buy API credits to run these tools. A network-enabled machine or Freebuff coding workspace will be needed to fetch the public files. Registration/licence-gated sources require user authorisation. Not all Australian standards can legally be copied to an agent.
 

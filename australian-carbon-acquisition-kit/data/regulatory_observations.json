@@ -1,0 +1,66 @@
+{
+  "as_of": "2026-10-12",
+  "note": "Independent observations/summaries; not reproduced full standards or legal advice.",
+  "rules": [
+    {
+      "id": "RULE-AU-NGA-MODE",
+      "title": "NGA Factors not the statutory NGER measurement instrument",
+      "issuer": "DCCEEW",
+      "classification": "published accounting guidance",
+      "applies_to": "General emissions estimation vs regulated NGER distinction",
+      "finding": "The NGA workbook should not be used in place of the NGER Measurement Determination for statutory NGER reports.",
+      "source_url": "https://www.dcceew.gov.au/climate-change/publications/national-greenhouse-accounts-factors-2026",
+      "review_status": "WEB_VERIFIED_REQUIRE_LEGAL_APPLICABILITY_CHECK"
+    },
+    {
+      "id": "RULE-VIC-RF",
+      "title": "Recycled First materials optimisation",
+      "issuer": "Victoria Big Build / ecologiQ",
+      "classification": "procurement policy",
+      "applies_to": "Eligible VIDA and SRLA projects; contracts govern project-specific applicability",
+      "finding": "Relevant bidders must demonstrate optimisation of recycled/reused Victorian material within approved specifications; tender plan and reporting requirements may apply.",
+      "source_url": "https://bigbuild.vic.gov.au/about/ecologiq/recycled-first-policy/the-policy",
+      "review_status": "WEB_VERIFIED_PROJECT_CONTRACT_CHECK_REQUIRED"
+    },
+    {
+      "id": "RULE-VIC-RF-PLAN",
+      "title": "Recycled First plan at tender and delivery",
+      "issuer": "Victoria Big Build",
+      "classification": "procurement implementation guidance",
+      "applies_to": "Project if Recycled First applies",
+      "finding": "A Recycled First Plan and reporting of recycled/reused material commitments are required in relevant tenders.",
+      "source_url": "https://bigbuild.vic.gov.au/about/ecologiq/recycled-first-policy/the-plan",
+      "review_status": "WEB_VERIFIED_PROJECT_CONTRACT_CHECK_REQUIRED"
+    },
+    {
+      "id": "RULE-VIC-GED",
+      "title": "General Environmental Duty",
+      "issuer": "EPA Victoria",
+      "classification": "legislative duty summary",
+      "applies_to": "Activities producing pollution or waste risks in Victoria",
+      "finding": "Take reasonably practicable steps to eliminate or reduce risks of harm to health and environment from pollution or waste.",
+      "source_url": "https://www.epa.vic.gov.au/general-environmental-duty",
+      "review_status": "WEB_VERIFIED_VERIFY_CURRENT_STATUTE"
+    },
+    {
+      "id": "RULE-AU-NGER",
+      "title": "NGER threshold applicability",
+      "issuer": "Clean Energy Regulator",
+      "classification": "regulated reporting threshold guidance",
+      "applies_to": "Corporate groups and facilities meeting statutory conditions",
+      "finding": "Thresholds: facilities 25,000 t CO2e scope 1+2 or 100 TJ production/consumption; corporate groups 50,000 t CO2e scope 1+2 or 200 TJ production/consumption, subject to statutory definitions.",
+      "source_url": "https://cer.gov.au/schemes/national-greenhouse-and-energy-reporting-scheme/assess-your-obligations",
+      "review_status": "WEB_VERIFIED_REQUIRE_STATUTORY_LEGAL_REVIEW"
+    },
+    {
+      "id": "RULE-AU-STANDARDS",
+      "title": "Reader Room use restrictions",
+      "issuer": "Standards Australia",
+      "classification": "copyright and contract terms",
+      "applies_to": "Access and reuse of Australian Standards",
+      "finding": "Free Reader Room is limited to personal non-commercial view-only access; download, reproduction and embedding in distributed agent are prohibited absent permission.",
+      "source_url": "https://www.standards.org.au/legal/rr-terms",
+      "review_status": "TERMS_WEB_VERIFIED"
+    }
+  ]
+}

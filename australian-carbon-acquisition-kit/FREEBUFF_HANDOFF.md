@@ -1,8 +1,10 @@
-# Freebuff / Codex handoff: complete actual source acquisition and validation
+# NISARVA — Freebuff / Codex handoff: complete actual source acquisition and validation
+
+**Canonical product name:** NISARVA. Refer to the engineering carbon intelligence AI application and all newly created product modules, screens, docs, and examples as **NISARVA**. Do not rename the user's existing general engineering portfolio repository or break older source links. See `AGENTS.md` for project-wide instructions.
 
 ## Task contract
 
-You are continuing a partial Australian Engineering Carbon Data Acquisition Kit prepared on 2026-10-12. This is **not yet** an operational, approved emissions database. The previous environment had access to official web research but was unable to download XLSX or PDF source binaries because of DNS/network restrictions. Do not claim anything was downloaded when it was not.
+You are continuing the NISARVA Australian Engineering Carbon Data Acquisition Kit prepared on 2026-10-12. This is **not yet** an operational, approved emissions database. The previous environment had access to official web research but was unable to download XLSX or PDF source binaries because of DNS/network restrictions. Do not claim anything was downloaded when it was not.
 
 **Your next task is data acquisition and validation, not building a dashboard or choosing a new model.**
 
